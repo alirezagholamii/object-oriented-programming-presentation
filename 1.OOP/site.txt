@@ -1,0 +1,5 @@
+https://en.wikipedia.org/wiki/History_of_programming_languages
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+
+
