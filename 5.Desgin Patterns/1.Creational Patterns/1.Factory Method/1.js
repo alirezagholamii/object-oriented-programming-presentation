@@ -1,4 +1,62 @@
 //Factory Method
+// The Factory Method pattern suggests that you replace direct
+// object construction calls (using the new operator) with calls
+// to a special factory method.
+
+
+class Car {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+}
+class Truck {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+}
+
+class VehiclesFactoryMethod {
+    static create(name, type) {
+        if (type === 'Car') {
+            return new Car(name, type);
+
+        } else if (type === 'Truck') {
+            return new Truck(name, type);
+        }
+    }
+}
+
+
+
+// This array will simulate our Database for the purposes of this tutorial
+const vehicles = [];
+
+// Let's fill our array with some vehicles!
+vehicles.push(VehiclesFactoryMethod.create("BMW", "Car"));
+vehicles.push(VehiclesFactoryMethod.create("MAN", "Truck"));
+console.log('8=vehicles===>', vehicles);
+
+// This function will output the inserted vehicles in a more stylized context 
+
+//https://7learn.com/programming/factory-design-patterns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //1
 /*
 class Point {
@@ -46,7 +104,7 @@ class Point {
 
 //3
 // Factory Method
-
+/*
 class Point {
     constructor(x, y) {
         this.x = x;
@@ -71,3 +129,4 @@ console.log('====>',p2)
 
 // x  Single Responsibility Principle  x
 
+*/
